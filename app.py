@@ -21,5 +21,5 @@ fig, axs = plt.subplots(nrows=len(images), figsize=(10, 20))
 keras_ocr.tools.drawAnnotations(image=images[0], predictions=prediction_groups[0], ax=axs )
 
 
-st.image(images)
+st.pyplot(fig)
 print(images)

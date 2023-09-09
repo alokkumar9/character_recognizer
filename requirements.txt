@@ -2,17 +2,13 @@ tensorflow
 keras_ocr<0.9.2
 matplotlib<3.7.2
 Pillow<10.0.0
-
-#streamlit<1.26.0
-#protobuf~=3.19.0
-
-#streamlit<1.26.0
-#protobuf<3.19.0
-
-protobuf==4.21
-streamlit<1.26.0
-
-#streamlit==1.13
 altair<5
+
+streamlit<1.26.0
+protobuf~=3.19.0
+
+#protobuf==3.19
+#streamlit==1.13
+
 
 

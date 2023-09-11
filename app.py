@@ -40,7 +40,7 @@ uploaded_img= st.file_uploader("Browse File", type=['jpeg','jpg','png'],accept_m
 #container2=st.empty()
 
 def on_click():
-    if uploaded_img and btn:
+    if uploaded_img is not None:
         pipeline = keras_ocr.pipeline.Pipeline()
         print(uploaded_img.name)
         images = [
@@ -56,7 +56,8 @@ def on_click():
 
         columnbelow[0].pyplot(fig)
         print(images)
-if uploaded_img:
+
+if uploaded_img is not None:
     btn=st.button("Recognize Text", on_click=on_click)
 
 belowrecognize=st.empty()
